@@ -1,0 +1,391 @@
+/* styles.css */
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+   font-family: Arial, sans-serif;
+   background-color: #f8f8f8;
+   display: flex;
+   flex-direction: column;
+   min-height: 100vh;
+   background-size: contain;
+}
+
+p {
+   line-height: 1.6;
+   font-size: 1.1rem;
+}
+
+h1 {
+   font-size: 2.3rem;
+}
+
+h2 {
+   font-size: 1.75rem;
+}
+
+h3 {
+   font-size: 1.55rem;
+}
+
+header {
+   padding-top: 10px;
+   background: rgba(0, 0, 0, 0.7);
+   color: #fff;
+   text-align: center;
+   top: 0;
+   position: sticky;
+   z-index: 100;
+}
+
+nav {
+   text-align: center;
+   margin: 20px 0;
+   display: flex;
+   justify-content: center;
+}
+
+nav a {
+   margin: 0 5px;
+   font-size: 1.1rem !important;
+   font-weight: bold !important;
+   color: white !important;
+   border-color: white !important;
+}
+
+.active-full {
+   background-color: #5d3eaa !important;
+   border: none !important;
+}
+
+.active-mobile {
+   color: #5d3eaa !important;
+}
+
+main {
+   padding: 25px;
+   justify-content: center;
+   margin: auto;
+   background-color: #fff;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+   display: flex;
+   flex-direction: column;
+   margin-top: 30px;
+   margin-bottom: 30px;
+   max-width: 60%;
+   border-radius: 10px;
+}
+
+article {
+   background: rgba(255, 255, 255, 0.9);
+   margin: 10px;
+   padding: 20px;
+   border-radius: 10px;
+   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+article h2 {
+   margin-bottom: 20px;
+}
+
+article h3 {
+   margin-top: 25px;
+}
+
+ul {
+   list-style-type: disc;
+}
+
+footer {
+   text-align: center;
+   background-color: rgba(0, 0, 0, 0.65);
+   color: #fff;
+   position: relative;
+   bottom: 0;
+   width: 100%;
+   padding: 13px 0;
+}
+
+.footer-content {
+   display: inline-flex; /* Горизонтальное выравнивание текста и иконок */
+   align-items: center; /* Вертикальное выравнивание */
+   gap: 1.5rem; /* Расстояние между текстом и иконками */
+   justify-content: center;
+   
+}
+
+.footer-content p {
+   margin: 0;
+   display: flex;
+   align-items: center;
+   font-size: 1.4rem;
+
+}
+
+.social-icons {
+   display: inline-flex; /* Горизонтальное расположение иконок */
+   gap: 15px; /* Расстояние между иконками */
+}
+.social-icons a {
+   color: #fff;
+   text-decoration: none;
+   font-size: 1.5rem;
+   transition: color 0.3s ease;
+}
+.social-icons a:hover {
+   color: #5d3eaa;
+}
+
+.social-icons a:active {
+   color: #5d3eaa;
+}
+
+.service {
+   margin-bottom: 20px;
+}
+
+/* Модальное окно */
+  .modal {
+   display: none;
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(0, 0, 0, 0.7);
+   justify-content: center;
+   align-items: center;
+}
+
+.modal-content {
+   background: #fff;
+   padding: 20px;
+   border-radius: 8px;
+   text-align: center;
+   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+   max-width: 500px !important;
+   display: flex; /* Используем Flexbox */
+   justify-content: center; /* Горизонтальное выравнивание по центру */
+   align-items: center; /* Вертикальное выравнивание, если нужно */
+}
+
+.modal-content h2 {
+   margin-top: 0;
+   color: black;
+   
+}
+
+.modal-content p {
+   margin: 10px 0;
+   color: black;
+   
+}
+
+.modal-content .close-btn {
+   margin-top: 15px;
+   background-color: #3f62ba;
+   color: #fff;
+   padding: 10px 20px;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+   font-weight: bold;
+}
+
+.modal-content .close-btn:hover {
+   background-color: #5d3eaa;
+}
+
+.modal-content .close-btn:active {
+   background-color: #5d3eaa;
+}
+
+#phoneIcon {
+   cursor: pointer;
+   font-size: 24px;
+   color: rgb(33, 15, 47);
+   position: fixed;
+   bottom: 70px;
+   right: 23px;
+   background-color: #6b27e0;
+   padding: 9px 16px;
+   border-radius: 50%;
+   text-align: center;
+   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+   
+}
+#phoneIcon:hover {
+   box-shadow: none;
+}
+
+#phoneIcon:active {
+   box-shadow: none;
+}
+
+#year {
+   margin-left: 10px;
+   margin-right: 10px;
+}
+
+/* Делаем ссылку размером на всю страницу */
+a.full-page-link {
+   display: block;
+   width: 100%;
+   height: 100%;
+   text-decoration: none;
+   color: black;
+}
+
+a.full-page-link:hover {
+   color: #6b27e0;
+}
+
+a.full-page-link:active {
+   color: #6b27e0;
+}
+
+.highlight {
+   background-color: #dff0d8;
+   padding: 5px 10px;
+   border-left: 5px solid #3c763d;
+   margin: 10px 0;
+}
+
+.card-img-top {
+   max-width: 100%;
+   height: auto;  
+}
+
+.logo {
+   text-align: center;
+   font-weight: bold;
+   text-transform: uppercase;
+   letter-spacing: 2px;
+}
+
+.logo .main {
+   font-family: 'Times New Roman', Times, serif;
+   font-size: 2.2rem;
+   color: #d2e0e8;
+}
+
+.logo .sub {
+   font-family: 'Times New Roman', Times, serif;
+   font-size: 1.5rem;
+   color: #d2e0e8;
+   font-weight: normal;
+}
+
+.mobile-menu {
+   display: none !important;
+}
+
+.mobile-menu a {
+   text-decoration: none;
+}
+
+@media (max-width: 1200px) {
+   main {
+      max-width: 75%;
+   }
+   p {
+      font-size: 1rem;
+   }
+
+   h1 {
+      font-size: 1.5rem;
+      font-weight: bold;
+   }
+
+   h2 {
+      font-size: 1.3rem;
+      font-weight: bold;
+   }
+   h3 {
+      font-size: 1.1rem;
+      font-weight: bold;
+   }
+}
+@media (max-width: 850px) {
+   main {
+      max-width: 85%;
+   }
+   
+}
+
+ @media (max-width: 760px) {
+   .mobile-menu {
+     display: block !important;
+   }
+   nav {
+      display: none !important;
+   }
+  
+   main {
+      max-width: 100%;
+      margin-top: 0%;
+      margin-bottom: 0%;
+      border-radius: 0;
+   }
+
+  .modal-content {
+   max-width: 85% !important;
+  }
+  .logo .main {
+   font-size: 1.6rem;
+  }
+  .logo .sub {
+   font-size: 1.2rem;
+  }
+
+}
+
+@media (max-width: 435px) {
+   
+   article {
+      margin: 0;
+      padding: 15px;
+   }
+   a.full-page-link {
+      margin-top: 15px;
+   }
+   .footer-content p {
+      font-size: 1.2rem;
+   }
+}
+
+@media (max-width: 395px) {
+   #recipes {
+      display: none;
+   }
+   .logo .main {
+      font-size: 1.5rem;
+     }
+     .logo .sub {
+      font-size: 1.1rem;
+     }
+   p {
+      font-size: 0.9rem;
+   }
+   h2 {
+      font-size: 1.2rem;
+      font-weight: bold;
+   }
+   h3 {
+      font-size: 1rem;
+      font-weight: bold;
+   }
+   
+}
+
+
+
+
+
+
+
+
